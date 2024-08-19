@@ -1,6 +1,16 @@
 #! /usr/bin/env node
 
+//npm install inquirer@9.2.10
+
+//npm install @types/inquirer@9.0.3 -D
+
 import inquirer from "inquirer";
+import chalk from "chalk";
+import showBanner from "node-banner" ;
+
+
+(async ( ) =>{ 
+  await showBanner ( 'C u r r e n c y  converter','','blue');
 
 const currency: any = {
   USD: 1, //base currency
@@ -43,8 +53,11 @@ console.log(amount);
 let baseAmount = amount / fromAmount; //base amount  may convert krne k lea
 let convertedAmount = baseAmount * toAmount;
 
-console.log("your amount in usd", baseAmount);
-console.log("you will get", convertedAmount);
+console.log(chalk.greenBright.italic("your amount in usd"), baseAmount);
+
+console.log(chalk.bold.blueBright("you will get"), convertedAmount);
+
+})();
 
 
 

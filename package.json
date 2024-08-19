@@ -1,6 +1,6 @@
 {
   "name": "@muhammed_suhaib/currency_converter",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "main": "index.js",
   "type": "module",
   "publishConfig": {
@@ -15,6 +15,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/chalk-animation": "^1.6.3",
     "@types/inquirer": "^9.0.7"
+  },
+  "dependencies": {
+    "chalk-animation": "^2.0.3",
+    "inquirer": "^9.2.10",
+    "node-banner": "^1.4.0"
   }
 }
